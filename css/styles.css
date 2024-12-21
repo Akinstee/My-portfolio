@@ -1,0 +1,53 @@
+@import url('http://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@import url('http://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('http://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    --body-bg-color: #1d1d1d;
+    --text-white:#ffffff;
+    --logo-color:#CC6C06;
+    font-family: -apple-system, BlinkMacSystemFont, "Sagoe UI", "Roboto", "Oxygen", "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--body-bg-color);
+}
+
+header{
+    width: 100%;
+    height: auto;
+    background-color: var(--body-bg-color);
+    border-bottom: 1px solid #3b3a3a;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav-center{
+    width: 90%;
+    margin: auto;
+
+}
+
+nav{
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle-icon .fas{
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.toggle-icon .fas:hover{
+    transform: scale(0.8) rotate(-45deg);
+    /* transition: .3s linear; */
+}
